@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// 조교는 새디스트야!
 public class Baek14656 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
