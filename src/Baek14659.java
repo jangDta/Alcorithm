@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//한조 서열정리
 public class Baek14659 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
