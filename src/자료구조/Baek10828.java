@@ -16,7 +16,7 @@ public class Baek10828 {
         Stack<Integer> myStack = new Stack<>();
 
         for(int i=0;i<n;i++) orderList[i] = sc.nextLine();
-        
+
         for(int i=0;i<n;i++){
             String order = orderList[i];
 
