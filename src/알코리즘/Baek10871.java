@@ -1,3 +1,5 @@
+package 알코리즘;
+
 import java.util.Scanner;
 
 // X보다 작은 수

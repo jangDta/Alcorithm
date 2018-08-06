@@ -1,3 +1,5 @@
+package 알코리즘;
+
 import java.util.Scanner;
 
 // 하늘에서 별똥별이

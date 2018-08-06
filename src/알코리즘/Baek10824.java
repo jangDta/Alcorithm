@@ -1,3 +1,5 @@
+package 알코리즘;
+
 import java.util.Scanner;
 
 // 네 수

@@ -1,3 +1,5 @@
+package 알코리즘;
+
 import java.util.Scanner;
 
 //한조 서열정리
