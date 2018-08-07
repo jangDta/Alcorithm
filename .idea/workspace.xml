@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00810c81-739b-4326-a74a-124ad8bbe866" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/자료구조/Baek10808.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/자료구조/Baek10809.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -98,28 +98,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Baek10808.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Baek10808.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/자료구조/Baek10808.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+            <state relative-caret-position="150">
+              <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="12" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Baek10809.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/자료구조/Baek10809.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Baek10824.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/알코리즘/Baek10824.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Baek14658.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/알코리즘/Baek14658.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -170,6 +172,7 @@
         <option value="$PROJECT_DIR$/src/자료구조/Baek1158.java" />
         <option value="$PROJECT_DIR$/src/자료구조/Baek10866.java" />
         <option value="$PROJECT_DIR$/src/자료구조/Baek10808.java" />
+        <option value="$PROJECT_DIR$/src/자료구조/Baek10809.java" />
       </list>
     </option>
   </component>
@@ -239,7 +242,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Baek10808">
+  <component name="RunManager" selected="Application.Baek10809">
     <configuration name="Baek10808" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -248,6 +251,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="자료구조.Baek10808" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Alcorithm" />
+      <envs />
+    </configuration>
+    <configuration name="Baek10809" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="자료구조.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="자료구조.Baek10809" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -305,25 +327,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="자료구조.Baek1158" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Alcorithm" />
-      <envs />
-    </configuration>
-    <configuration name="Baek1406" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="자료구조.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="자료구조.Baek1406" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -418,18 +421,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Baek10828" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Baek1406" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Baek10845" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Baek1158" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Baek10808" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Baek10845" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Baek1158" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Baek10808" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Baek10809" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Baek10808" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Baek1158" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Baek10845" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Baek10828" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Baek1406" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Baek10809" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Baek10808" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Baek1158" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Baek10845" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Baek10828" />
       </list>
     </recent_temporary>
   </component>
@@ -780,9 +783,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/자료구조/Baek10808.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="150">
+          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="12" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/자료구조/Baek10809.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
