@@ -15,9 +15,9 @@ public class Baek10809 {
         Arrays.fill(arr,-1);
 
         for(int i=0;i<chars.length;i++){
-            int asci = (int)chars[i] - 97;
-            if(arr[asci] == -1){
-                arr[asci] = i;
+            int ascii = (int)chars[i] - 97;
+            if(arr[ascii] == -1){
+                arr[ascii] = i;
             }
         }
 

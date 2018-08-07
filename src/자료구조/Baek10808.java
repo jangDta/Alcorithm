@@ -12,8 +12,8 @@ public class Baek10808 {
         int[] arr = new int[26];
 
         for(int i=0;i<chars.length;i++){
-            int asci = (int)chars[i] - 97;
-            arr[asci]++;
+            int ascii = (int)chars[i] - 97;
+            arr[ascii]++;
         }
 
         for(int i=0;i<arr.length;i++) System.out.print(arr[i]+" ");
