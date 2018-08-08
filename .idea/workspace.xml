@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00810c81-739b-4326-a74a-124ad8bbe866" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/다이나믹프로그래밍/Baek11726.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/다이나믹프로그래밍/Back11727.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -74,18 +74,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Baek10809.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/자료구조/Baek10809.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Baek11655.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/자료구조/Baek11655.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -118,11 +106,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Baek11726.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Baek11726.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/다이나믹프로그래밍/Baek11726.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
               <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Back11727.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/다이나믹프로그래밍/Back11727.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -176,6 +174,7 @@
         <option value="$PROJECT_DIR$/src/자료구조/Baek11656.java" />
         <option value="$PROJECT_DIR$/src/다이나믹프로그래밍/Baek1463.java" />
         <option value="$PROJECT_DIR$/src/다이나믹프로그래밍/Baek11726.java" />
+        <option value="$PROJECT_DIR$/src/다이나믹프로그래밍/Back11727.java" />
       </list>
     </option>
   </component>
@@ -245,15 +244,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Baek11726">
-    <configuration name="Baek10820" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Back11727">
+    <configuration name="Back11727" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="자료구조.*" />
+          <option name="PATTERN" value="다이나믹프로그래밍.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="자료구조.Baek10820" />
+      <option name="MAIN_CLASS_NAME" value="다이나믹프로그래밍.Back11727" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -423,19 +422,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Baek10820" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Baek11655" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Baek11656" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Baek1463" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Baek11726" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Baek11655" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Baek11656" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Baek1463" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Baek11726" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Back11727" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Baek11726" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Baek1463" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Baek11656" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Baek11655" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Baek10820" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Back11727" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Baek11726" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Baek1463" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Baek11656" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Baek11655" />
       </list>
     </recent_temporary>
   </component>
@@ -492,16 +491,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/자료구조/Baek10799.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/자료구조/Baek1406.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -873,6 +862,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/다이나믹프로그래밍/Back11727.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding />
         </state>
       </provider>
