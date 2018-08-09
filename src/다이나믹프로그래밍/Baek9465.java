@@ -33,12 +33,6 @@ public class Baek9465 {
             dp[1][i] = Math.max(dp[0][i-1],dp[0][i-2] ) + map[1][i];
         }
 
-        for(int i=1;i<=n;i++){
-            System.out.println(i+" : "+dp[0][i]);
-            System.out.println(i+" : "+dp[1][i]);
-            System.out.println("-------------");
-        }
-
         long res = Math.max(dp[0][n],dp[1][n]);
 
         return res;
