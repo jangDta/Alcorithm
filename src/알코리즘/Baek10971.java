@@ -10,8 +10,7 @@ public class Baek10971 {
     static int n;
     static int[][] cost;
     static ArrayList<Integer> arr;
-    static int res = 0;
-    static int min = 999999999;
+    static int min = 2147483647;
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
@@ -44,8 +43,8 @@ public class Baek10971 {
 
         System.out.println(x+"에서 출발해 "+x+"로 돌아오는 경우");
 
-        //for(int i=0;i<arr2.length;i++) System.out.print(arr2[i]+" ");
-        //System.out.println("--------------------");
+        for(int i=0;i<arr2.length;i++) System.out.print(arr2[i]+" ");
+        System.out.println("--------------------");
 
         perm(arr2,0,x);
 
@@ -58,7 +57,7 @@ public class Baek10971 {
         if (pivot == arr.length) {
             print(arr);
             System.out.println("except:"+except+"일때 ,     cal:"+calculatePath(arr,except));
-            if(min > calculatePath(arr,except)) min = calculatePath(arr,except);
+            if(calculatePath(arr,except) > 0 && min > calculatePath(arr,except)) min = calculatePath(arr,except);
             return;
         }
         for (int i = pivot; i < arr.length; i++) {
@@ -83,12 +82,15 @@ public class Baek10971 {
 
     static int calculatePath(int[] arr,int x){
         int res = 0;
-
+        if(cost[x][arr[0]] == 0 || cost[arr[arr.length-1]][x] == 0) {
+            return -2147483647;
+        }
         res+= cost[x][arr[0]];
         res+= cost[arr[arr.length-1]][x];
         //System.out.println(cost[x][arr[0]]+"+"+cost[arr[arr.length-1]][x]);
 
         for(int i=0;i<arr.length-1;i++){
+            if(cost[arr[i]][arr[i+1]] == 0) res+= -2147483647;
             res+= cost[arr[i]][arr[i+1]];
         }
 
