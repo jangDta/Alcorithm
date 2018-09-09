@@ -1,7 +1,10 @@
 package 알코리즘;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.StringTokenizer;
 
 // 토마토
 public class Baek7576 {
@@ -10,71 +13,115 @@ public class Baek7576 {
     static int[] dy = {0, 1, 0, -1};
 
     static int count = 1;
+    static boolean amIfirst = true;
 
-    static int m,n;
+    static int m, n;
     static int[][] box;
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
 
-        m = sc.nextInt();
-        n = sc.nextInt();
+    static ArrayList<Point> dict;
+    static ArrayList<Point> tmp;
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        m = Integer.parseInt(st.nextToken());
+        n = Integer.parseInt(st.nextToken());
         box = new int[n][m];
 
-        ArrayList<Point> dict = new ArrayList<>();
+        dict = new ArrayList<>();
+        tmp = new ArrayList<>();
 
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                box[i][j] = sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            StringTokenizer tokenizer = new StringTokenizer(br.readLine());
+            for (int j = 0; j < m; j++) {
+                int input = Integer.parseInt(tokenizer.nextToken());
+                box[i][j] = input;
             }
         }
 
-        while(isBoxHasSpace()){
 
-            printBox();
-            for(int i=0;i<n;i++){
-                for(int j=0;j<m;j++){
-                    if(box[i][j] == count){
-                        dict.add(new Point(i,j));
+        //System.out.println("zerocountfirst:"+zeroCount);
+
+
+        while (true) {
+
+
+            if (amIfirst) {
+                for (int i = 0; i < n; i++) {
+                    for (int j = 0; j < m; j++) {
+                        if (box[i][j] == count) {
+                            dict.add(new Point(i, j));
+                        }
                     }
                 }
+
+                amIfirst = false;
+            }else{
+                dict.addAll(tmp);
+                tmp.clear();
             }
 
-            for(int i=0;i<dict.size();i++){
-                System.out.println(dict.get(i).getX()+","+dict.get(i).getY());
-                counting(dict.get(i).getX(),dict.get(i).getY());
+            //System.out.println(dict);
+
+
+            for (int i = 0; i < dict.size(); i++) {
+                //System.out.println(dict.get(i).getX()+","+dict.get(i).getY());
+                counting(dict.get(i).getX(), dict.get(i).getY());
+            }
+
+            //System.out.println(dict);
+
+            if (dict.isEmpty()) {
+                if (!isBoxHasSpace()) {
+                    break;
+                }
+                count = 1;
+                break;
+
             }
 
             count++;
+
+
+//            zeroCount -= dict.size();
+//
+//            System.out.println("zerocOunt:"+zeroCount);
+
             dict.clear();
 
         }
 
 
-        printBox();
+        //printBox();
+
+        System.out.println(count - 2);
 
 
     }
 
 
-    static void counting(int i,int j){
-        for(int k=0;k<4;k++){
-            int nx = i+dx[k];
-            int ny = j+dy[k];
+    static void counting(int i, int j) {
 
-            if(nx>=0 && ny>=0 && nx<n && ny<m){
-                if(box[nx][ny] == 0){
-                    box[nx][ny] = count+1;
+        for (int k = 0; k < 4; k++) {
+            int nx = i + dx[k];
+            int ny = j + dy[k];
+
+            if (nx >= 0 && ny >= 0 && nx < n && ny < m) {
+                if (box[nx][ny] == 0) {
+                    box[nx][ny] = count + 1;
+                    tmp.add(new Point(nx, ny));
                 }
             }
 
         }
     }
 
-    static boolean isBoxHasSpace(){
+    static boolean isBoxHasSpace() {
         boolean flag = false;
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
-                if(box[i][j] == 0){
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (box[i][j] == 0) {
                     flag = true;
                     break;
                 }
@@ -83,18 +130,19 @@ public class Baek7576 {
         return flag;
     }
 
-    static void printBox(){
+    static void printBox() {
         System.out.println();
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
                 System.out.print(box[i][j]);
             }
             System.out.println();
         }
     }
 
-    static class Point{
-        int x,y;
+
+    static class Point {
+        int x, y;
 
         public Point(int x, int y) {
             this.x = x;
@@ -109,9 +157,11 @@ public class Baek7576 {
             return y;
         }
 
-        public void print(){
-            System.out.println("x:"+x+" y:"+y);
+        public void print() {
+            System.out.println("x:" + x + " y:" + y);
         }
 
     }
+
+
 }
