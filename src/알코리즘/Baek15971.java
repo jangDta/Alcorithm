@@ -24,11 +24,4 @@ public class Baek15971 {
 
 
     }
-
-    static class Graph{
-        static class Node{
-            int data;
-
-        }
-    }
 }

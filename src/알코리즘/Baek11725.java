@@ -1,71 +1,53 @@
 package 알코리즘;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 // 트리의 부모 찾기
 public class Baek11725 {
 
     static int n;
-    static int[][] map;
-    static int[] myparent;
+    static ArrayList<Integer>[] list;
+    static int[] parents;
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt(); // node
-        map = new int[n+1][n+1];
-        myparent = new int[n+1];
+
+        list = new ArrayList[n+1];
+        parents = new int[n+1];
+
+        for(int i=1;i<=n;i++){
+            list[i] = new ArrayList<>();
+        }
 
         for(int i=0;i<n-1;i++){
             int from = sc.nextInt();
             int to = sc.nextInt();
 
-            map[from][to] = 1;
-            map[to][from] = 1;
+            list[from].add(to);
+            list[to].add(from);
 
         }
 
-        printmap();
-        System.out.println("------");
-        printArr();
+        dfs(list,parents,n,1,0);
 
-        checkParent(1);
-        System.out.println("==============================");
-        printmap();
-        System.out.println("------");
-        printArr();
+        for(int i=2;i<=n;i++) System.out.println(parents[i]);
 
 
 
     }
 
-    static void printmap(){
-        for(int i=1;i<n+1;i++){
-            for(int j=1;j<n+1;j++){
-                System.out.print(map[i][j]+" ");
-            }
-            System.out.println();
+    static void dfs(ArrayList<Integer>[] list, int[] parents, int n, int start, int parent){
+        parents[start] = parent;
+
+        for(int i=0;i<list[start].size();i++){
+            int item = list[start].get(i);
+            if (item != parent) dfs(list,parents,n,item,start);
         }
     }
 
-    static void printArr(){
-        for(int i=1;i<n+1;i++) System.out.print(myparent[i]+" ");
-        System.out.println();
-    }
 
-
-    static void checkParent(int c){
-        if(c != 1){
-
-        }else{
-            for(int i=1;i<n+1;i++){
-                if(map[c][i] == 1){
-                    myparent[i] = 1;
-                    map[i][c] = 0;
-                }
-            }
-        }
-
-    }
 
 
 

@@ -1,3 +1,4 @@
+package 코테;
 
 import java.util.ArrayList;
 import java.util.Scanner;
